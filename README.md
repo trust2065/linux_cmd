@@ -36,7 +36,7 @@ make file
     `grep -c "main" test.js        `
   
 在其他的指令下filter    
-    `ifconfig | grep –w "RUNNING"    `
+    `ifconfig | grep –w "RUNNING"    `  
     `find . –name "*.mp3" | grep –i JayZ | grep –vi "remix"  `
   
   
@@ -49,7 +49,7 @@ make file
 複製"這個目錄"底下的file1  
     `cp file1 file2  `
     複製目錄和所有檔案
-    `sudo cp -r Resources/ /var/www/html/`
+    `sudo cp -r Resources/ /var/www/html/`  
     覆蓋已存在的檔案
     `sudo cp -rf Resources_2/200010 Resources/`
   
@@ -86,4 +86,9 @@ remove
 顯示執行過的命令  
   
   
-  
+## scp
+上傳20003資料夾到遠端server  
+-i  使用加密檔(xxx.pem)  
+scp -ri \Users\cli\Downloads\wushka\Wushka_Dev.pem 200003\ ubuntu@ec2-13-211-158-9.ap-southeast-2.compute.amazonaws.com:  
+
+

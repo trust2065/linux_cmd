@@ -43,7 +43,8 @@ make file
 ## find   
   
 搜尋"這個目錄"底下的檔案，只顯示檔名和路徑  
-`find . -name ereadium*  `
+`find . -name ereadium*  `  
+> cmder不能用這個指令
   
 ## cp  
 複製"這個目錄"底下的file1  

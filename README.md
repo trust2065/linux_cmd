@@ -93,3 +93,32 @@ remove
 scp -ri \Users\cli\Downloads\wushka\Wushka_Dev.pem 200003\ ubuntu@ec2-13-211-158-9.ap-southeast-2.compute.amazonaws.com:  
 
 
+-------------------
+## Move whole folder from local(windows) to remote 
+
+Windows directory
+What FOLDER you want to move  
+- ex: C:\wushka
+- Says you have a folder called 200004 under it
+
+
+## move to working folder
+Use Cmder  
+`cd C:\wushka`
+
+## use scp to move  
+Use Cmder  
+`scp -ri \Users\cli\Downloads\wushka\Wushka_Dev.pem 200004\ ubuntu@ec2-13-211-158-9.ap-southeast-2.compute.amazonaws.com:`
+
+
+## rename 200004\ to 200004  
+Use PuTTy  
+`sudo mv 200004\\/ 200004`
+
+> You had moved the directory to {remote}/home/{login username}/200004
+
+## To move from 'home/{login username}' to other folder
+Use PuTTy  
+`sudo cp -r 200003/ /var/www/html/Resources/`
+
+
